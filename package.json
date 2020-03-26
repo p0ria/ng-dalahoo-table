@@ -1,6 +1,21 @@
 {
   "name": "ng-dalahoo-table",
-  "version": "0.0.26",
+  "version": "1.0.0",
+  "description": "An extensible table for Angular inspired by Dalahoo tour agency",
+  "author": "Pooria Amanzadeh p0ria@live.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p0ria/ng-dalahoo-table"
+  },
+  "homepage": "https://github.com/p0ria/ng-dalahoo-table",
+  "keywords": [
+    "angular",
+    "typescript",
+    "table",
+    "persian",
+    "dalahoo"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^9.0.0",
     "@angular/core": "^9.0.0",
