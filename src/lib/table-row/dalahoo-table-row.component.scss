@@ -1,0 +1,11 @@
+.table-row {
+  padding: 10px 0;
+  border-bottom: 1px dashed #0CC;
+  display: flex;
+  flex-flow: row nowrap;
+  cursor: pointer;
+  &:hover {
+    background: #EAFFFF
+  }
+}
+

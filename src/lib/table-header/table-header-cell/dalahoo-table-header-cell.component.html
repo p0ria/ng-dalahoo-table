@@ -1,0 +1,7 @@
+<div class="table-header-cell" (clickOutside)="isFilterOpen = false">
+  <ng-content></ng-content>
+  <span class="filter">
+    <i class="filter-icon fa fa-filter" (click)="toggleFilterOpen($event)"></i>
+    <ng-content select="dalahoo-table-header-cell-filter"></ng-content>
+  </span>
+</div>

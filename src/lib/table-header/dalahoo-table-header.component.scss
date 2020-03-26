@@ -1,0 +1,15 @@
+:host {
+  flex: 0 0 30px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+  .table-header {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+  }
+}
+
+

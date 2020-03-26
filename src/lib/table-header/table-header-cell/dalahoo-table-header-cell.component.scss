@@ -1,0 +1,91 @@
+@import "projects/ng-dalahoo-table/styles/mixins";
+:host {
+  height: 100%;
+  margin: 0 0 0 2px;
+  user-select: none;
+  &:last-child {
+    margin-left: 0;
+  }
+
+  .table-header-cell {
+    height: 100%;
+    background-color: #EFEFEF;
+    border: 1px solid #ccc;
+    border-radius: 3px 3px 0 0;
+    padding: 3px 10px;
+    @include centerVertical;
+    cursor: pointer;
+    &::before {
+      content: '\f161';
+      font-family: FontAwesome;
+      margin-left: 5px;
+      color: rgba(0, 0, 0, .8);
+      display: none;
+    }
+
+    .filter {
+      display: none;
+      margin-right: 5px;
+      position: relative;
+
+      .filter-icon {
+        color: rgba(0, 0, 0, .5);
+      }
+      &:hover {
+        .filter-icon {
+          color: rgba(0, 0, 0, .8);
+        }
+      }
+    }
+
+    &::ng-deep dalahoo-table-header-cell-filter {
+      visibility: hidden;
+    }
+  }
+  &.center {
+    .table-header-cell {
+      justify-content: center;
+    }
+  }
+  &.asc, &.des {
+    .table-header-cell {
+      &::before {
+        display: block;
+      }
+    }
+  }
+  &.asc {
+    .table-header-cell {
+      &::before {
+        content: '\f160';
+      }
+    }
+  }
+  &.filter {
+    .table-header-cell {
+      &:hover {
+        .filter {
+          display: block;
+        }
+      }
+    }
+  }
+  &.filter-active {
+    .table-header-cell {
+      .filter {
+        display: block;
+        .filter-icon {
+          color: #00CCCC;
+        }
+      }
+    }
+  }
+  &.filter-open {
+    .table-header-cell {
+      &::ng-deep dalahoo-table-header-cell-filter {
+        visibility: visible;
+      }
+    }
+  }
+}
+

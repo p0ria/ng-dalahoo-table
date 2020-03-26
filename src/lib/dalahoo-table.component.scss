@@ -1,0 +1,24 @@
+:host {
+  overflow-y: hidden;
+  display: flex;
+  min-height: 200px;
+
+  .table {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #fff;
+
+    dalahoo-table-search {
+      flex: 0 0 35px;
+    }
+
+  }
+  &::ng-deep {
+    .highlight {
+      color: var(--search-highlight-color, darkorange);
+      font-weight: bold;
+    }
+  }
+}
+
